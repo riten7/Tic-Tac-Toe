@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component renders properly Test Square 1`] = `"<button class=\\" square\\">X</button>"`;

@@ -5,9 +5,85 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #2c303a;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.game-board {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.board {
+  display: grid;
+  width: 440px;
+  height: 440px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #999;
+  border-spacing: 3px;
+  grid-template-columns: auto auto auto auto;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  margin: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4em;
+  color: #fff;
+  background: #2c303a;
+  border: 1px solid #999;
+}
+
+.square--green {
+  background: green;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.game-status, .game-info {
+  font-size: 3em;
+  color: #999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  margin-top: 15px;
+  margin-bottom: 16px;
+  width: auto;
+  height: 40px;
+  background-color:#8acaca;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button--green {
+  background-color: #4caf50;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  margin-left: 2px;
+}
+
