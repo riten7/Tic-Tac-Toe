@@ -2,11 +2,11 @@ import React from 'react';
 import Square from './Square';
 
 const Board = (props) => {
-  const getWinnerClass = (index) => props.winnerSquares &&
-    (props.winnerSquares[0] === index ||
-      props.winnerSquares[1] === index ||
-      props.winnerSquares[2] === index ||
-      props.winnerSquares[3] === index)
+  const getWinnerClass = (index) => props.winnerRow &&
+    (props.winnerRow[0] === index ||
+      props.winnerRow[1] === index ||
+      props.winnerRow[2] === index ||
+      props.winnerRow[3] === index)
     ? 'square--green'
     : '';
 

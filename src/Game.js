@@ -44,7 +44,7 @@ const Game = () => {
         <div className="game-board">
           <Board
             squares={gameState.squares}
-            winnerSquares={winnerRow}
+            winnerRow={winnerRow}
             onClick={index => handleClick(index)}
           />
         </div>
